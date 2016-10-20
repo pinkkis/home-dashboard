@@ -1,14 +1,19 @@
 {
   "name": "home-dashboard",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "home automation/monitoring dashboard",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pinkkis/home-dashboard"
+  },
+  "keywords": ["home automation", "dashboard"],
   "author": "Kristian Koivisto-Kokko <pinkkis@gmail.com> (http://pinkkis.com/)",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
