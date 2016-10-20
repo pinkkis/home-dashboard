@@ -51,7 +51,6 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 app.post('/rename/:id', (req, res) => {
-	console.log(req.params.id, req.body.name);
 	if (temperatures[req.params.id]) {
 		temperatures[req.params.id].name = req.body.name;
 	}
