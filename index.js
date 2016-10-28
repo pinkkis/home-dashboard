@@ -13,7 +13,7 @@ const io = require('socket.io')(server);
 let temperatures = {};
 
 // mqtt client
-const mqttBrokerUrl = process.env.MQTT_BROKER || 'mqtt://192.168.192.150';
+const mqttBrokerUrl = process.env.MQTT_BROKER || 'mqtt://127.0.0.1';
 const httpPort = process.env.HTTP_PORT || 3000;
 const mqttClient = mqtt.connect(mqttBrokerUrl);
 
